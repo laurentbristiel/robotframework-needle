@@ -21,3 +21,12 @@ var/
 
 # IDE
 .idea/
+
+# Robot Framework output files
+log.html
+report.html
+output.xml
+
+# Needle screenshots
+
+screenshots/
