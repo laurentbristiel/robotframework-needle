@@ -10,8 +10,8 @@ class TestLogo(NeedleTestCase):
         self.driver.get('http://www.bbc.co.uk/news/')
         try:
                 WebDriverWait(self.driver, 20).until(
-                    ec.presence_of_element_located((By.ID, "blq-mast"))
+                    ec.presence_of_element_located((By.ID, "idcta-link"))
             )
         finally:
             pass
-        self.assertScreenshot('#blq-mast', 'bbc-masthead')
+        self.assertScreenshot('#idcta-link', 'bbc-masthead')
